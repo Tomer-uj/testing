@@ -41,9 +41,9 @@ jobs:
       continue-on-error: false
 
     - name: Test Service 1
-      working-directory: microservices/service1
-      run: pytest tests/
+      working-directory: ./microservices/service1
+      run:  python -m pytest tests/
 
     - name: Test Service 2
-      working-directory: microservices/service2
-      run: pytest tests/
+      working-directory: ./microservices/service2
+      run: python -m pytest tests/
